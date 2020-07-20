@@ -1,0 +1,130 @@
+body {
+    background: url("../resource/phone.jpg") no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    align-items: center;
+}
+
+header span {
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+    line-height: 80px;
+}
+
+article {
+    text-align: center;
+    overflow: auto;
+    padding: 5px;
+}
+input {
+    font-size: 16px;
+    padding: 10px;
+    display: block;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+  }
+  input:focus {
+    outline: none;
+  }
+input, button {
+	text-align: center;
+	margin: 10px;
+}
+
+select {
+	opacity: 0.9;
+	width: 15%;
+	margin: 0 25px;
+}
+.btn {
+	position: relative;
+    overflow: hidden;
+    z-index: 1;
+	padding: 10px 40px;
+	margin: 0 20px;
+	font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 300;
+    line-height: 5px;
+    color: white;
+    font-size: 15px;    
+    text-transform: uppercase;
+	background: #8fc4f5;
+	border-width: 0;
+    box-shadow: 5px 5px 0 #532831;
+	outline: none;
+	cursor: pointer;
+    transition: 1.5s;
+}
+.btn:before,
+.btn:after {
+	content: "";
+	position: absolute;  
+    height: 100px;
+    left: -50%;
+    margin-top: -100px;    
+    top: 50%;
+    width: 200px;
+	border-radius: 50%;
+    opacity: 0.3;
+    z-index: -1;
+    transform: scale(0);
+}
+.btn:before {
+	background: #ffeede;   
+    transition: .8s ease-out;
+}
+.btn:after {   
+    transition: .4s ease-in .3s;
+}
+.btn:hover {
+    color: #532831;
+}
+.btn:hover:before,
+.btn:hover:after{
+    opacity: 1;
+    transform: scale(4);
+}
+
+
+input {
+	opacity: 0.9;
+	display: block;
+	margin-left: 35%;
+	width: 30%;
+	height: 20px;
+}
+
+#row {
+    font-size: 15px;
+    border-style: solid;
+    border-color: lightcyan;
+}
+
+#resultTable {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    line-height: 2.2;
+    background-color: rgb(194, 166, 166);
+    max-height: 444px;
+    border-style: solid;
+    border-color: lightcyan;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#table {
+    display: none;
+}
+
+#addresses{
+    background-color: lightslategrey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

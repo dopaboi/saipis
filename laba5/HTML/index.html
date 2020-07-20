@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>База данных абонентов</title>
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <script src="../js/template/template.js"></script>
+        <script src="../js/database.js"></script>
+        <script src="../js/script.js"></script>
+	</head>
+	
+	<body>
+		<header>
+			<span>Информация о абонентах</span>
+		</header>
+
+		<article>
+			<input type="text" name="name" id="name" placeholder="ФИО" required>
+			<input type="telephone" name="telephone" id="telephone" placeholder="Номер телефона" required>
+			<input type="text" name="debt" id="debt" placeholder="Задолженность" required>
+			<input type="text" name="address" id="address" placeholder="Адрес" required>
+			<select></select>
+			<p>				
+				<button class="btn" type="button" onclick="add()">Добавить запись</button>
+				<button class="btn" type="reset" onclick="reset()">Очистить форму</button>
+			</p>
+			<p>
+				<button class="btn" type="button" onclick="remove()">Уалить запись</button>
+				<button class="btn" type="button" onclick="show(this)">Показать все записи</button>
+			</p>
+				<button class="btn" type="button" onclick="showAllAddresses()">Показать должников</button>
+			<p>
+				<textarea rows="2" cols="50" name="extra" id="extra" placeholder="Дополнительное свойство"></textarea>
+				<button class="btn" type="button" onclick="addProp()">Добавить дополнительное свойство</button>
+			</p>
+				<div id="addresses"></div>
+				<div id="table">
+					<table id="resultTable">
+						<tr>
+							<th>ID</th>
+							<th>ФИО</th>
+							<th>Номер телефона</th>
+							<th>Задолженность</th>
+							<th>Адрес</th>
+							<th>Дополнительное свойство</th>
+						</tr>
+					</table>
+			</div>
+		</article>
+	</body>
+</html>
